@@ -4,7 +4,7 @@ A browser-based card night for friends. Five playable games, 8-character room co
 
 ## Games
 
-- Color Clash: Uno-style color matching, wilds, reverse, skip, draw two/four; no stacking. Original visual design, not affiliated with UNO or Mattel.
+- Color Clash: Uno-style color matching, wilds, reverse, skip, draw two/four; mixed +2/+4 stacking across colors, with the full penalty paid by the player who draws. Original visual design, not affiliated with UNO or Mattel.
 - Poker: five-card draw, 5-chip ante, two fixed 10-chip betting rounds (3 raises maximum), one draw of up to 3 cards, ranked showdown and split pots. Each hand resets to 100 play chips. No money.
 - Go Fish: collect all 13 books, with correct ask-again and lucky-draw turns.
 - Scum: matching-rank climbing with passes and President-to-Scum finish order. Independent hands, no rank trading.
@@ -40,3 +40,5 @@ For Vercel, import this repository, select Vite, build with `npm run build`, and
 ## Verification
 
 `npm test` checks rules, turn validation, secrecy of guest views, poker rankings/chip conservation, and repeated complete games using legal bot moves. Browser checks cover desktop/mobile layout, practices, dialog behavior and two-client room connectivity.
+
+Card dealing, draws, plays and Go Fish transfers animate between the stock, hands and table. Opponent draws use card backs only. Motion respects the device’s reduced-motion preference.

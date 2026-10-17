@@ -6,3 +6,13 @@
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important;scroll-behavior:auto!important}}
 
 .playing-card.red.color-card{background:#bd5c4f;color:#fff}.playing-card.red.color-card .card-center{border:1px solid #ffffff55;border-radius:50%;padding:16px 9px;min-width:65%;transform:translate(-50%,-50%) rotate(-20deg)}
+.card-flight{position:fixed;z-index:15;pointer-events:none;transform-origin:top left;will-change:transform,opacity;contain:layout style;filter:drop-shadow(0 10px 10px #001e1a33)}
+.card-flight .playing-card{pointer-events:none;opacity:1!important;box-shadow:none}
+.active-suit{flex-wrap:wrap;justify-content:center}
+.draw-stack{display:inline-flex;padding:7px 11px;background:#f2ca8222;border:1px solid #f2ca8266;border-radius:20px;color:#ffe0a8;font-weight:600;text-transform:none;letter-spacing:.2px}
+.finish-discard{display:flex;justify-content:center;gap:5px;margin-bottom:15px}
+.finish-discard .playing-card{width:58px;height:83px}
+.finish-discard .playing-card .card-center{font-size:26px}
+.finish-discard .playing-card .corner{font-size:12px}
+.finish-discard .playing-card small{font-size:9px}
+@media(prefers-reduced-motion:reduce){.card-flight{display:none}}
